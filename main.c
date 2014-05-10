@@ -20,10 +20,11 @@ int toBinary(int decimal) {
 }
 
 int main(int argc, char *argv[]) {
-	int decimal = 0001;
-	int binary = 0;
+	int decimal = 0;
+	decimal = atoi(argv[1]);
 
-	fprintf(stdout, "%d\n", toBinary(decimal));
+	printf("DECIMAL:\t%d\n", decimal);
+	printf("BINARY:\t\t%d\n", toBinary(decimal));
 
 
 	return 0;
