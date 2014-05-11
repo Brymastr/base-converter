@@ -23,6 +23,12 @@ int main(int argc, char *argv[]) {
 	int decimal = 0;
 	decimal = atoi(argv[1]);
 
+	if(argc < 2) {
+		printf("No input given.\n\n");
+		return usage();
+	}
+
+	printf("# of args:\t%d\n", argc - 1);
 	printf("DECIMAL:\t%d\n", decimal);
 	printf("BINARY:\t\t%d\n", toBinary(decimal));
 
